@@ -1,0 +1,65 @@
+.joyride-list { display: none; }
+
+.joyride-tip-guide {
+  display: none;
+  z-index: 101;
+  width: 95%;
+  left: 2.5%;
+}
+
+.joyride-tip-guide .joyride-nub {
+  display: block;
+  position: absolute;
+  left: 22px;
+  width: 0;
+  height: 0;
+  border: 14px solid transparent;
+}
+
+.joyride-nub.top {
+  top: -28px;
+  border-bottom-color: #3c4e5a;
+}
+
+.joyride-nub.bottom {
+  bottom: -28px;
+  border-top-color: #3c4e5a;
+}
+
+.joyride-nub.right,
+.joyride-nub.left {
+  top: 22px;
+  left: auto;
+  right: auto;
+}
+
+.joyride-nub.right {
+  right: -28px;
+  border-left-color: #3c4e5a;
+}
+
+.joyride-nub.left {
+  left: -28px;
+  border-right-color: #3c4e5a;
+}
+
+.joyride-modal-bg {
+  background: transparent;
+  background: rgba(0,0,0,.5);
+  position: fixed;
+  overflow: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  cursor: pointer;  
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .joyride-tip-guide {
+    width: 325px;
+    left: inherit;
+  }
+}
